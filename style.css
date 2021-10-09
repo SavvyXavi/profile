@@ -38,6 +38,10 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
 }
 
 @media screen and (min-width: 968px){
@@ -122,7 +126,28 @@ img {
 }
 
 
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
 
+
+.nav {
+    max-width: 968px;
+    /* height: var(--header-height); */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.nav_logo,
+.nav_toggle {
+    color: var(--title-color);
+}
 .content{ 
     padding: 0px;
 }
